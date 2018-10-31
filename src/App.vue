@@ -1,17 +1,17 @@
 <template>
   <div id='app' class='container'>
     <HelloWorld/>
-    <VueComponent/>
-    <DataComponent/>
-    <VModel/>
-    <Conditionals/>
-    <VBind/>
-    <ComputedComponent/>
-    <VonComponent/>
-    <MethodsComponent/>
-    <VForComponent/>
-    <TodoList/>
-    <NextSteps/>
+    <!-- <VueComponent/> -->
+    <!-- <DataComponent/> -->
+    <!-- <VModel/> -->
+    <!-- <Conditionals/> -->
+    <!-- <VBind/> -->
+    <!-- <ComputedComponent/> -->
+    <!-- <VonComponent/> -->
+    <!-- <MethodsComponent/> -->
+    <!-- <VForComponent/> -->
+    <!-- <TodoList/> -->
+    <!-- <NextSteps/> -->
   </div>
 </template>
 
