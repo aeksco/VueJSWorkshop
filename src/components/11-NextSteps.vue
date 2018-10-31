@@ -10,12 +10,20 @@
       <i class="fa fa-fw fa-smile-o"></i>
     </p>
 
-
+    <p class="lead">Great Resources</p>
     <ul class="list-group">
       <a class="list-group-item" target="_blank" href="https://router.vuejs.org/">Vue Router</a>
       <a class="list-group-item" target="_blank" href="https://vuex.vuejs.org/">Vuex</a>
       <a class="list-group-item" target="_blank" href="https://cli.vuejs.org/">Vue CLI</a>
     </ul>
+
+    <br>
+
+    <small class='text-muted'>(shameless self-plug)</small>
+    <p class="lead">Generate full-stack applications with Node.js and Vue.js at Codotype.io</p>
+    <div class="btn-group">
+      <a class="btn btn-dark" target="_blank" href="https://codotype.io/">Codotype.io</a>
+    </div>
 
     <p class="lead mt-3">
       Built with
