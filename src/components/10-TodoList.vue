@@ -46,9 +46,10 @@ export default {
   },
   methods: {
     addTodo () {
+      if (!this.label) return
       let newTodo = { label: this.label, done: false }
       this.todos.push(newTodo)
-      this.label = ''
+      this.label = ""
     }
   }
 };

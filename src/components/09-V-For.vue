@@ -8,6 +8,8 @@
     <!-- Basic v-for usage -->
     <ul class="list-group">
       <li class="list-group-item" v-for="item in todos" :key="item.label">
+        <i class="fa fa-lg fa-check text-success" v-if="item.done"></i>
+        <i class="fa fa-lg fa-times text-danger" v-else></i>
         {{ item.label }}
       </li>
     </ul>
@@ -27,7 +29,7 @@ export default {
       todos: [
         { label: 'Eat', done: true },
         { label: 'Sleep', done: true },
-        { label: 'Code', done: true },
+        { label: 'FF', done: true },
         { label: 'Study', done: false }
       ]
     };

@@ -1,14 +1,12 @@
 <template>
-  <div class='card card-body'>
+  <div class="card card-body">
     <h4>Step 07 - The v-on directive</h4>
-    <small class='text-muted'>Add event handlers to your template elements</small>
+    <small class="text-muted">Add event handlers to your template elements</small>
 
     <hr>
 
     <!-- Add a click handler with v-on:click -->
-    <button class="btn btn-outline-dark" v-on:click="checked = !checked">
-      Toggle Checked
-    </button>
+    <button class="btn btn-outline-dark" v-on:click="checked = !checked">Toggle Checked</button>
 
     <br>
 
@@ -19,8 +17,7 @@
     <br>
 
     <!-- Next Step -->
-    <small class='text-muted'>Let's learn about adding more complex iteractions with methods</small>
-
+    <small class="text-muted">Let's learn about adding more complex iteractions with methods</small>
   </div>
 </template>
 
@@ -32,12 +29,12 @@ export default {
     };
   },
   computed: {
-    iconCss () {
+    iconCss() {
       if (this.checked) {
-        return 'fa fa-lg fa-check text-success'
+        return "fa fa-lg fa-folder text-success";
       } else {
-        return 'fa fa-lg fa-times text-danger'
-      };
+        return "fa fa-lg fa-laptop text-danger";
+      }
     }
   }
 };

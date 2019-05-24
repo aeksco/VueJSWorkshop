@@ -30,8 +30,8 @@
 export default {
   data() {
     return {
-      label: 'RCOS is awesome',
-      checked: false
+      label: 'Testy Test Test Baby',
+      checked: approved
     };
   }
 };

@@ -1,34 +1,73 @@
 <template>
-  <div class="hello">
-    <img src="@/assets/logo.png" width="300px">
+  <div class="card card-body">
+    <h4>Project Folder Name</h4>
 
-    <hr>
+    <!-- https://vuejs-tips.github.io/vue-the-mask/ -->
+    <div class='form-group'>
+      <label>Job ID</label>
+      <small class="text-muted ml-2">Describe the Job ID here</small>
+      <input
+        required
+        class="form-control"
+        placeholder="Job ID"
+        type="number"
+        v-model.number="project.job_id"
+      >
+    </div>
+    
+    <input
+      required
+      class="form-control"
+      placeholder="Client Name"
+      type="text"
+      v-model.trim="project.client_name"
+    >
+    
+    <input
+      required
+      class="form-control mt-2"
+      placeholder="Project"
+      type="text"
+      v-model.trim="project.project"
+    >
 
-    <h4>
-      Welcome to Vue.js Workshop!
-    </h4>
+    <br>
+    <!-- <small class="text-muted">Preview</small> -->
+    <!-- <pre class="bg-dark text-light">{{project}}</pre> -->
 
-    <p class="lead text-muted mt-3">
-      This workshop will guide you through the basics of using Vue.js to build a basic ToDo list application
-      <i class="fa fa-fw fa-smile-o"></i>
-    </p>
-
-    <p class="lead mt-3">
-      Built with
-      <a href="https://vuejs.org/v2/guide/" target="_blank">Vue.js</a>,
-      <a href="https://getbootstrap.com/docs/4.0/components" target="_blank">Bootstrap</a>,
-      &amp;
-      <a href="https://fontawesome.bootstrapcheatsheets.com/" target="_blank">FontAwesome</a>
-      <i class="fa fa-thumbs-up"></i>
-    </p>
-
-    <strong class="text-success">
-      Jump into the App.vue and comment in the next component to get started!
-    </strong>
-
+    <small class="text-muted">Project Folder Name</small>
+    <pre class="bg-dark text-light">{{foldername}}</pre>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      project: {
+        job_id: 666666,
+        client_name: "Intello Inc.",
+        project: "Intstgram Ad"
+      }
+    };
+  },
+  computed: {
+    foldername () {
+      // Variables for each access
+      let jobId = this.project.job_id
+      let clientName = this.project.client_name
+      let project = this.project.project
+
+      // Removes non-alphabetic characters, chains of whitespace characters
+      clientName = clientName.replace(/[^a-zA-Z\s]/gi, '').replace(/\s\s+/g, ' ')
+      clientName = clientName.replace(/\s+/g, '')
+
+      project = project.replace(/[^a-zA-Z\s]/gi, '').replace(/\s\s+/g, ' ')
+      project = project.replace(/\s+/g, '')
+
+      // Assembles foldername
+      return jobId + '_' + clientName + '_' + project
+    }
+  }
+};
 </script>

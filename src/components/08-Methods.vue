@@ -37,7 +37,7 @@ export default {
   methods: {
     onToggle () {
       this.checked = !this.checked
-      this.count = this.count + 1
+      this.count = this.count + 6
     }
   },
   computed: {

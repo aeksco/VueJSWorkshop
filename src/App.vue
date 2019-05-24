@@ -1,9 +1,10 @@
 <template>
-  <div id='app' class='container'>
-    <HelloWorld/>
+  <div id="app" class="container">
+    <ProjectFileName />
+    <!-- <HelloWorld/> -->
     <!-- <VueComponent/> -->
     <!-- <DataComponent/> -->
-    <!-- <VModel/> -->
+    <!-- <9VModel/> -->
     <!-- <Conditionals/> -->
     <!-- <VBind/> -->
     <!-- <ComputedComponent/> -->
@@ -16,22 +17,24 @@
 </template>
 
 <script>
-import HelloWorld from './components/00-Hello';
-import VueComponent from './components/01-VueComponent';
-import DataComponent from './components/02-Data';
-import VModel from './components/03-V-Model';
-import Conditionals from './components/04-Conditionals';
-import VBind from './components/05-V-Bind';
-import ComputedComponent from './components/06-Computed';
-import VonComponent from './components/07-V-On';
-import MethodsComponent from './components/08-Methods';
-import VForComponent from './components/09-V-For';
-import TodoList from './components/10-TodoList';
-import NextSteps from './components/11-NextSteps';
+import ProjectFileName from "./components/ProjectFileName";
+import HelloWorld from "./components/00-Hello";
+import VueComponent from "./components/01-VueComponent";
+import DataComponent from "./components/02-Data";
+import VModel from "./components/03-V-Model";
+import Conditionals from "./components/04-Conditionals";
+import VBind from "./components/05-V-Bind";
+import ComputedComponent from "./components/06-Computed";
+import VonComponent from "./components/07-V-On";
+import MethodsComponent from "./components/08-Methods";
+import VForComponent from "./components/09-V-For";
+import TodoList from "./components/10-TodoList";
+import NextSteps from "./components/11-NextSteps";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
+    ProjectFileName,
     HelloWorld,
     VueComponent,
     DataComponent,
@@ -50,7 +53,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
